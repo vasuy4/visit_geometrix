@@ -4,10 +4,6 @@ body {
 }
 
 .rectangle-1508 {
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #aeddf8;
-  border-width: 1.5px;
   height: 45px;
   position: relative;
   margin-left: 8px;
@@ -70,17 +66,30 @@ body {
   font-weight: 600;
 }
 
-.div-visualization3d {
+.div-border {
   background: #f9fcff;
   border-radius: 10px;
   border-style: solid;
   border-color: #aeddf8;
   border-width: 1.5px;
-  height: 96px;
   position: relative;
 }
 
-.text-visualization3d {
+.h96 {
+  height: 96px;
+}
+
+.h77 {
+  margin-top: 27px;
+  height: 77px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.text-in-border {
+  box-sizing: border-box;
   margin: 0 auto;
   margin-top: 8px;
   color: #33334d;
