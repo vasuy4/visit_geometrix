@@ -51,11 +51,11 @@ body {
   margin-bottom: 10px;
 }
 
-.about_text {
+.mb10 {
   margin-bottom: 10px;
 }
 
-.about_geometrix {
+.free-text {
   color: #33334d;
   font-size: 16px;
   font-weight: 400;
@@ -97,4 +97,22 @@ body {
   font-size: 16px;
   position: relative;
   width: 308px;
+}
+
+.survey-button {
+  position: relative;
+  display: inline-block;
+}
+
+.survey-button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* или другой цвет, подходящий к вашей кнопке */
+  font-weight: bold;
+  font-size: 16px; /* подберите нужный размер */
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
 }
