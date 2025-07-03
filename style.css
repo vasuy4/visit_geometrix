@@ -99,20 +99,28 @@ body {
   width: 308px;
 }
 
-.survey-button {
+.mt2 {
+  margin-top: 2px;
+}
+
+.mtm2 {
+  margin-top: -2px;
+}
+
+.btn-contact {
   position: relative;
   display: inline-block;
 }
 
-.survey-button-text {
+.text-in-btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; /* или другой цвет, подходящий к вашей кнопке */
+  color: black;
   font-weight: bold;
-  font-size: 16px; /* подберите нужный размер */
-  text-transform: uppercase;
+  font-size: 16px;
   width: 100%;
   text-align: center;
 }
+
