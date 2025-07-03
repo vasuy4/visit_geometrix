@@ -1,0 +1,35 @@
+body {
+  font-family: 'Jura', sans-serif;
+}
+
+.rectangle-1508 {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #aeddf8;
+  border-width: 1.5px;
+  height: 45px;
+  position: relative;
+  margin-left: 12px;
+  margin-right: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.geometrix_logo {
+    width: 24.28px;
+    height: 23.9px;
+}
+
+.polytech_logo {
+    width: 90.74px;
+    height: 23.91px;
+}
+
+.logo_name {
+    font-weight: 700;
+    font-size: 11.26px;
+    color: #33334D;
+}
