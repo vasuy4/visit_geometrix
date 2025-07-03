@@ -12,6 +12,7 @@ body {
   position: relative;
   margin-left: 8px;
   margin-right: 8px;
+  margin-bottom: 15px;
 
   display: flex;
   align-items: center;
@@ -38,4 +39,53 @@ body {
 
 .x_svg {
   margin-left: -2px;
+}
+
+.information {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.h1_about {
+  color: #33334d;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.about_text {
+  margin-bottom: 10px;
+}
+
+.about_geometrix {
+  color: #33334d;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.div-visualization3d {
+  background: #f9fcff;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #aeddf8;
+  border-width: 1.5px;
+  height: 96px;
+  position: relative;
+}
+
+.text-visualization3d {
+  margin: 0 auto;
+  margin-top: 8px;
+  color: #33334d;
+  text-align: left;
+  font-size: 16px;
+  position: relative;
+  width: 308px;
 }
