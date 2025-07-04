@@ -163,10 +163,10 @@ footer {
     justify-content: center;
 }
 
-.ps div button {
+.psPoly1 {
     background-color: #ff2727;
 }
 
-.ps div button:nth-child(even) {
+.psPoly2 {
     background-color: #0b0ed4;
 }
