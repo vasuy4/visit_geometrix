@@ -1,170 +1,172 @@
-body {
-  font-family: "Jura", sans-serif;
-  background-color: #f9fcff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.rectangle-1508 {
-  height: 45px;
-  position: relative;
-  margin-left: 8px;
-  margin-right: 8px;
-  margin-bottom: 15px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+@font-face {
+    font-family: 'CodecPro';
+    src: url('./src/CodecPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.geometrix_logo {
-  width: 24.28px;
-  height: 23.9px;
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.polytech_logo {
-  width: 90.74px;
-  height: 23.91px;
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
-.geometrix_logo_name {
-  margin-left: -5px;
-  font-weight: 700;
-  font-size: 12px;
-  color: #33334d;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.x_svg {
-  margin-left: -2px;
+button {
+    font-family: 'CodecPro', sans-serif;
+    border: none;
+    padding: 2vh 3vh;
+    border-radius: 50vw;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.8vh;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: fadeInUp 1s ease forwards;
 }
 
-.information {
-  margin-left: 8px;
-  margin-right: 8px;
+button:hover {
+    transform: scale(1.08);
 }
 
-.h1_about {
-  color: #33334d;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 400;
-  position: relative;
-  margin-bottom: 10px;
+h1, h2, h3 {
+    animation: fadeInUp 1s ease forwards;
 }
 
-.mb10 {
-  margin-bottom: 10px;
+header {
+    background-color: #ffffff;
 }
 
-.free-text {
-  color: #33334d;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
+header p {
+    font-size: 3vh;
+    font-weight: 800;
+    animation: fadeInUp 1s ease forwards;
 }
 
-.fw600 {
-  font-weight: 600;
+header div {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw 0;
+    animation: fadeIn 1.2s ease forwards;
 }
 
-.div-border {
-  background: #f9fcff;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #aeddf8;
-  border-width: 1.5px;
-  position: relative;
+header div img {
+    height: 5vh;
+    animation: fadeIn 1.2s ease forwards;
 }
 
-.h96 {
-  height: 96px;
+main {
+    background-color: #FF7B27;
+    font-family: 'CodecPro', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 5vh 7vh;
+    animation: fadeIn 1.5s ease forwards;
 }
 
-.h77 {
-  margin-top: 27px;
-  height: 77px;
+main div {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-bottom: 4vh;
 }
 
-.mt10 {
-  margin-top: 10px;
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
 }
 
-.text-in-border {
-  box-sizing: border-box;
-  margin: 0 auto;
-  margin-top: 8px;
-  color: #33334d;
-  text-align: left;
-  font-size: 16px;
-  position: relative;
-  width: 308px;
+ul li {
+    border: 2px solid white;
+    border-radius: 3vh;
+    padding: 2vh;
+    width: 50vw;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: calc(var(--i, 0) * 0.3s);
+    list-style: none;
 }
 
-.mt2 {
-  margin-top: 2px;
+ul li h3 {
+    margin-bottom: 1.4vh;
+    position: relative;
+    z-index: 0;
+    color: white;
 }
 
-.mb2 {
-  margin-bottom: 2px;
+ul li img {
+    position: absolute;
+    top: 1vh;
+    left: 9vw;
+    z-index: -1;
+    scale: 1.2;
 }
 
-.mtm2 {
-  margin-top: -2px;
+footer {
+    padding: 4vh 7vh;
+    font-family: 'CodecPro', sans-serif;
+    text-align: center;
+    animation: fadeIn 2s ease forwards;
+    background-color: #ffffff;
 }
 
-.btn-contact {
-  position: relative;
-  display: inline-block;
+.opros {
+    margin-bottom: 2vh;
+    gap: 1vh;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUp 1s ease forwards;
 }
 
-.text-in-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  width: 100%;
-  text-align: center;
+.opros button {
+    background-color: #FF7B27;
+    width: 100%;
 }
 
-.center-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.ps {
+    margin-top: 4vh;
+    gap: 1vh;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUp 1.3s ease forwards;
 }
 
-.btn-survay {
-  position: relative;
-  display: inline-block;
-  z-index: 0; 
-  padding: 1px 3px; 
-  border-radius: 12px; 
-  overflow: visible;
+.ps div {
+    display: flex;
+    gap: 2vh;
+    justify-content: center;
 }
 
-.btn-survay::before {
-  content: "";
-  position: absolute;
-  top: -3px; bottom: -3px;
-  left: -3px; right: -3px;
-  border-radius: 15px;
-  background: linear-gradient(270deg, #fc96ee, #FF6A3D, #AEDDF8, #e477fa);
-  background-size: 600% 600%;
-  animation: gradientAnimation 8s ease infinite;
-  z-index: -1;
-  filter: blur(8px);
-  opacity: 0.8;
+.ps div button {
+    background-color: #ff2727;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.ps div button:nth-child(even) {
+    background-color: #0b0ed4;
 }
